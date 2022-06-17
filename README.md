@@ -1,6 +1,8 @@
 # Hand-Getures-with-Flex-sensor
 
-With Flex sensor and accelerometer MPU6050 for smart glove development, building models to regconize Vietnamese sign language with 7 class : "Vâng","Ăn","Uống", "Dừng", "Không", "Đưa", "Không có cử chỉ".
+This project achived absolute score at my thesis in  Hồ Chí Minh National University, Việt Nam.
+
+With Flex sensor and accelerometer MPU6050 for smart glove development, built models to regconize Vietnamese sign language with 7 class : "Vâng","Ăn","Uống", "Dừng", "Không", "Đưa", "Không có cử chỉ".
 
 ![hình bao tay](https://user-images.githubusercontent.com/107675385/174346100-d21608e4-63c7-4b91-878a-7213b846a7f1.jpg)
 
