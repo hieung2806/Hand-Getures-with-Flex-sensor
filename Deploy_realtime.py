@@ -25,7 +25,7 @@ time.sleep(2)
 
 data = np.empty([0,8])
 
-for i in range(322): # test doc serial 2 lan
+while True: # test doc serial 2 lan
     # make sure the 'COM#' is set according the Windows Device Manager   
     line = ser.readline()   # read a byte string  
     data_length = 8 # 8 values = 3 acc + 5 flex
@@ -48,11 +48,14 @@ for i in range(322): # test doc serial 2 lan
     #    
     # print(line_Data)
     line_Data = np.reshape(line_Data, (1,8))
-    data = np.append(data, line_Data, axis = 0)    
+    data = np.append(data, line_Data, axis = 0)
+    if data.shape == (322,8):
+        X_data = processing_data(data)
+        X_data = np.reshape(data, (1,322,8,1))
+        result = model.predict(X_data)
+        print(gestures_name[np.argmax(result)])
+        data.clear()
 ser.close()
 time.sleep(2)
 
-X_data = processing_data(data)
-X_data = np.reshape(data, (1,322,8,1))
-result = model.predict(X_data)
-print(gestures_name[np.argmax(result)])
+
