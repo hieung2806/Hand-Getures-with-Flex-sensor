@@ -13,10 +13,11 @@ With Flex sensor and accelerometer MPU6050, building models to regconize Vietnam
 
 ![Confusion matrix CNN2D](https://user-images.githubusercontent.com/107675385/174345825-1b40e38f-3bf7-46ab-abc4-f13952a477bd.png)
 
+
 ![Final Decision Boundary](https://user-images.githubusercontent.com/107675385/174345654-d6400066-dbb4-4fec-98f1-42692e99be75.png)
 
 
-![So sánh kết quả nhận dạng](https://user-images.githubusercontent.com/107675385/174345940-4146c285-e92c-4d87-947a-7065d7ab0f2c.PNG)
+
 
 
 
